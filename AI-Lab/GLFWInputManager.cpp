@@ -19,53 +19,58 @@ namespace API
 	void GLFWInputManager::init()
 	{
 		InputManager::init();
-		linker_window();
+		this->window = API::RenderTypeToGLFWwindow(FactoryEngine::selected_graphics_backend);
 
 		key_manager = [&](int key, int sancode, int action, int mods)
-		{
-			switch (action)
 			{
-			case GLFW_PRESS:
-				this->key_b_event[key] = '1';
-				break;
-			case GLFW_RELEASE:
-				this->key_b_event[key] = '0';
-				if (is_key_pressed_flag) is_key_pressed_flag = false;
-				break;
-			}
-		};
+				switch (action)
+				{
+				case GLFW_PRESS:
+					this->key_b_event[key] = '1';
+					break;
+				case GLFW_RELEASE:
+					this->key_b_event[key] = '0';
+					if (is_key_pressed_flag) is_key_pressed_flag = false;
+					break;
+				}
+			};
 
 		mouse_manager = [&](double xpos, double ypos)
-		{
-			mouse_old_pos = mouse_pos;
-			mouse_pos = { (int)xpos, (int)ypos };
-		};
+			{
+				mouse_old_pos = mouse_pos;
+				mouse_pos = { (int)xpos, (int)ypos };
+			};
 
 		mouse_pressed_manager = [&](int button, int action, int mods)
-		{
-			switch (action)
 			{
-			case GLFW_PRESS:
-				if (button == GLFW_MOUSE_BUTTON_RIGHT)
-					button_mouse_rigth_pressed_manager = true;
-				else if (button == GLFW_MOUSE_BUTTON_LEFT)
-					button_mouse_left_pressed_manager = true;
-				break;
-			case GLFW_RELEASE:
-				if (button == GLFW_MOUSE_BUTTON_RIGHT)
-					button_mouse_rigth_pressed_manager = false;
-				else if (button == GLFW_MOUSE_BUTTON_LEFT)
-					button_mouse_left_pressed_manager = false;
-				if (is_mouse_pressed_flag) is_mouse_pressed_flag = false;
-				break;
-			}
+				switch (action)
+				{
+				case GLFW_PRESS:
+					if (button == GLFW_MOUSE_BUTTON_RIGHT)
+						button_mouse_rigth_pressed_manager = true;
+					else if (button == GLFW_MOUSE_BUTTON_LEFT)
+						button_mouse_left_pressed_manager = true;
+					break;
+				case GLFW_RELEASE:
+					if (button == GLFW_MOUSE_BUTTON_RIGHT)
+						button_mouse_rigth_pressed_manager = false;
+					else if (button == GLFW_MOUSE_BUTTON_LEFT)
+						button_mouse_left_pressed_manager = false;
+					if (is_mouse_pressed_flag) is_mouse_pressed_flag = false;
+					break;
+				}
 
-		};
+			};
 
 		scroll_manager = [&](double xoffset, double yoffset)
-		{
-			scrool_offset = { xoffset, yoffset };
-		};
+			{
+				scrool_offset = { xoffset, yoffset };
+			};
+
+		framebuffer_size = [&](int width, int height)
+			{
+				glViewport(0, 0, width, height);
+			};
 
 		glfwSetKeyCallback(window, [](GLFWwindow* window, int key, int scancode, int action, int mods) {
 			auto w = (GLFWInputManager*)glfwGetWindowUserPointer(window); if (w->key_manager) w->key_manager(key, scancode, action, mods);
@@ -81,6 +86,10 @@ namespace API
 
 		glfwSetScrollCallback(window, [](GLFWwindow* window, double xoffset, double yoffset) {
 			auto w = (GLFWInputManager*)glfwGetWindowUserPointer(window); if (w->scroll_manager) w->scroll_manager(xoffset, yoffset);
+			});
+
+		glfwSetFramebufferSizeCallback(window, [](GLFWwindow* window, int width, int height) {
+			auto w = (GLFWInputManager*)glfwGetWindowUserPointer(window); if (w->framebuffer_size) w->framebuffer_size(width, height);
 			});
 
 		glfwSetWindowUserPointer(window, this);
@@ -138,20 +147,4 @@ namespace API
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
-
-	void GLFWInputManager::linker_window()
-	{
-		switch (FactoryEngine::selected_graphics_backend)
-		{
-		case GL1:
-			this->window = static_cast<GL1Render*>(FactoryEngine::get_render())->get_window();
-			break;
-		case GL4:
-			this->window = static_cast<GL4Render*>(FactoryEngine::get_render())->get_window();
-			break;
-		default:
-			break;
-		}
-	}
-
 }

@@ -17,4 +17,9 @@ namespace API
 	{
 		return delta_time;
 	}
+
+	float TimeManager::get_time()
+	{
+		return 0.0f;
+	}
 }

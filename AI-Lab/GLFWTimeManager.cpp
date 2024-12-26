@@ -23,4 +23,9 @@ namespace API
 	{
 		return TimeManager::get_delta_time();
 	}
+
+	float GLFWTimeManager::get_time()
+	{
+		return static_cast<float>(glfwGetTime());
+	}
 }

@@ -9,6 +9,6 @@ namespace API
 		void init() override;
 		void update() override;
 		float get_delta_time() override;
+		float get_time() override;
 	};
-
 }

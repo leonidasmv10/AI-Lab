@@ -49,16 +49,16 @@ namespace API
 			/*if (System::get_cursor_enabled())
 			{
 				float time = System::get_time_manager()->get_time();
-				float radius = 15.0f;
+				float radius = 5.0f;
 				float x = static_cast<float>(sin(time) * radius);
 				float z = static_cast<float>(cos(time) * radius);
 				view = glm::lookAt(glm::vec3(x, 1.0f, z), glm::vec3(0.0f, 0.5f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 			}
 			else*/
-		{
-			view = glm::lookAt(position, position + look_at, up);
-		}
-		break;
+			{
+				view = glm::lookAt(position, position + look_at, up);
+			}
+			break;
 		case API::ORTHO:
 			view = glm::lookAt(position, look_at, up);
 			break;

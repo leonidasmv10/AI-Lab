@@ -19,7 +19,6 @@ namespace API
 		bool is_button_mouse_pressed_down(const bool& right) override;
 		void set_mouse_cursor(const bool& enabled) override;
 		void buffers_events() override;
-		void linker_window();
 
 	private:
 		GLFWwindow* window;
@@ -27,8 +26,6 @@ namespace API
 		std::function<void(double xpos, double ypos)> mouse_manager;
 		std::function<void(int button, int action, int mods)> mouse_pressed_manager;
 		std::function<void(double xoffset, double yoffset)> scroll_manager;
-
-		
+		std::function<void(int width, int height)>  framebuffer_size;
 	};
 }
-
