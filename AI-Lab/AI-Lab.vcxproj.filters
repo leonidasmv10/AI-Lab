@@ -1,128 +1,146 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="API3D">
-      <UniqueIdentifier>{6270909b-82ed-4b0d-a644-049dde931968}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="API3D\Render">
-      <UniqueIdentifier>{695f046d-728f-425c-8b60-297dbc5c2ecc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="API3D\Data">
-      <UniqueIdentifier>{ff218711-be7f-4b25-bbbe-f368077a3651}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="API3D\Core">
-      <UniqueIdentifier>{a00e6d7f-4aba-4a34-8152-9dbeec1051b6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="API3D\InputManager">
-      <UniqueIdentifier>{1eb5c991-4b4e-4b8d-81ca-6858acb6e150}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="API3D\TimeManager">
-      <UniqueIdentifier>{7f7fd4a7-2bd1-4a8e-b628-a0673542a349}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="API3D\Shader">
-      <UniqueIdentifier>{cddb28b0-768f-4c06-914b-5a26b800ba9f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="API3D\Material">
-      <UniqueIdentifier>{55381665-af3f-4855-89e3-e2d2c0a618bb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="resources">
       <UniqueIdentifier>{cefaa744-327c-4c66-bbc7-f12a335cde6e}</UniqueIdentifier>
     </Filter>
     <Filter Include="resources\shaders">
       <UniqueIdentifier>{613f8624-6b30-4ae7-a59d-3d3e212c5c04}</UniqueIdentifier>
     </Filter>
-    <Filter Include="API3D\Camera">
-      <UniqueIdentifier>{a97f13fa-6b9c-4bea-b654-28d9a3e02499}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="API3D\Texture">
-      <UniqueIdentifier>{f89fa386-7f68-4e3a-8f7a-53ef07ef81f0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="API3D\Types">
-      <UniqueIdentifier>{83f0c8c0-0dd6-43be-b0db-026a2c76eb51}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="API3D\Gui">
-      <UniqueIdentifier>{35893762-f0eb-4f36-8ae8-65193246e65c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="imgui">
       <UniqueIdentifier>{8556f8f1-3123-4abc-9ed0-6c353633c343}</UniqueIdentifier>
     </Filter>
-    <Filter Include="API3D\DataType">
+    <Filter Include="src">
+      <UniqueIdentifier>{9834bef3-9624-40fd-b502-a63be070aaac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs">
+      <UniqueIdentifier>{895ded4a-6fb2-4098-a7b8-f39b75015dae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Api">
+      <UniqueIdentifier>{6270909b-82ed-4b0d-a644-049dde931968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Api\Render">
+      <UniqueIdentifier>{695f046d-728f-425c-8b60-297dbc5c2ecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Api\Data">
+      <UniqueIdentifier>{ff218711-be7f-4b25-bbbe-f368077a3651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Api\Core">
+      <UniqueIdentifier>{a00e6d7f-4aba-4a34-8152-9dbeec1051b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Api\InputManager">
+      <UniqueIdentifier>{1eb5c991-4b4e-4b8d-81ca-6858acb6e150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Api\TimeManager">
+      <UniqueIdentifier>{7f7fd4a7-2bd1-4a8e-b628-a0673542a349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Api\Shader">
+      <UniqueIdentifier>{cddb28b0-768f-4c06-914b-5a26b800ba9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Api\Material">
+      <UniqueIdentifier>{55381665-af3f-4855-89e3-e2d2c0a618bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Api\Camera">
+      <UniqueIdentifier>{a97f13fa-6b9c-4bea-b654-28d9a3e02499}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Api\Texture">
+      <UniqueIdentifier>{f89fa386-7f68-4e3a-8f7a-53ef07ef81f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Api\Types">
+      <UniqueIdentifier>{83f0c8c0-0dd6-43be-b0db-026a2c76eb51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Api\Gui">
+      <UniqueIdentifier>{35893762-f0eb-4f36-8ae8-65193246e65c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Api\DataType">
       <UniqueIdentifier>{7eb8be62-d449-478c-ad91-c24379036296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Engine">
+      <UniqueIdentifier>{c8180363-6051-4083-b8e0-6a2d32c9df61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Engine\Components">
+      <UniqueIdentifier>{6a8938ec-6102-47d4-b196-13734f68d317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Math">
+      <UniqueIdentifier>{9a2daba6-de63-457c-8205-d6ea2fba08df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Engine\Core">
+      <UniqueIdentifier>{f51d9227-13a1-4bc4-bd82-8ce287c7ed28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Templates">
+      <UniqueIdentifier>{e799c5fc-b759-48fa-b004-02adfd5c0ef5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FactoryEngine.cpp">
-      <Filter>API3D</Filter>
-    </ClCompile>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>API3D</Filter>
+      <Filter>libs\Api</Filter>
     </ClCompile>
     <ClCompile Include="System.cpp">
-      <Filter>API3D</Filter>
+      <Filter>libs\Api</Filter>
     </ClCompile>
     <ClCompile Include="GL1Render.cpp">
-      <Filter>API3D\Render</Filter>
+      <Filter>libs\Api\Render</Filter>
     </ClCompile>
     <ClCompile Include="GL4Render.cpp">
-      <Filter>API3D\Render</Filter>
+      <Filter>libs\Api\Render</Filter>
     </ClCompile>
     <ClCompile Include="Render.cpp">
-      <Filter>API3D\Render</Filter>
+      <Filter>libs\Api\Render</Filter>
     </ClCompile>
     <ClCompile Include="Entity.cpp">
-      <Filter>API3D\Core</Filter>
+      <Filter>libs\Api\Core</Filter>
     </ClCompile>
     <ClCompile Include="Mesh3D.cpp">
-      <Filter>API3D\Core</Filter>
+      <Filter>libs\Api\Core</Filter>
     </ClCompile>
     <ClCompile Include="Object.cpp">
-      <Filter>API3D\Core</Filter>
+      <Filter>libs\Api\Core</Filter>
     </ClCompile>
     <ClCompile Include="Object3D.cpp">
-      <Filter>API3D\Core</Filter>
+      <Filter>libs\Api\Core</Filter>
     </ClCompile>
     <ClCompile Include="GLFWInputManager.cpp">
-      <Filter>API3D\InputManager</Filter>
+      <Filter>libs\Api\InputManager</Filter>
     </ClCompile>
     <ClCompile Include="InputManager.cpp">
-      <Filter>API3D\InputManager</Filter>
+      <Filter>libs\Api\InputManager</Filter>
     </ClCompile>
     <ClCompile Include="GLFWTimeManager.cpp">
-      <Filter>API3D\TimeManager</Filter>
+      <Filter>libs\Api\TimeManager</Filter>
     </ClCompile>
     <ClCompile Include="TimeManager.cpp">
-      <Filter>API3D\TimeManager</Filter>
+      <Filter>libs\Api\TimeManager</Filter>
     </ClCompile>
     <ClCompile Include="RenderProgram.cpp">
-      <Filter>API3D\Shader</Filter>
+      <Filter>libs\Api\Shader</Filter>
     </ClCompile>
     <ClCompile Include="GLSLShader.cpp">
-      <Filter>API3D\Shader</Filter>
+      <Filter>libs\Api\Shader</Filter>
     </ClCompile>
     <ClCompile Include="Material.cpp">
-      <Filter>API3D\Material</Filter>
+      <Filter>libs\Api\Material</Filter>
     </ClCompile>
     <ClCompile Include="GLSLMaterial.cpp">
-      <Filter>API3D\Material</Filter>
+      <Filter>libs\Api\Material</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Camera.cpp">
-      <Filter>API3D\Camera</Filter>
+      <Filter>libs\Api\Camera</Filter>
     </ClCompile>
     <ClCompile Include="CameraKeyboard.cpp">
-      <Filter>API3D\Camera</Filter>
+      <Filter>libs\Api\Camera</Filter>
     </ClCompile>
     <ClCompile Include="Texture.cpp">
-      <Filter>API3D\Texture</Filter>
+      <Filter>libs\Api\Texture</Filter>
     </ClCompile>
     <ClCompile Include="GLTexture.cpp">
-      <Filter>API3D\Texture</Filter>
+      <Filter>libs\Api\Texture</Filter>
     </ClCompile>
     <ClCompile Include="Gui.cpp">
-      <Filter>API3D\Gui</Filter>
+      <Filter>libs\Api\Gui</Filter>
     </ClCompile>
     <ClCompile Include="GLFWImGui.cpp">
-      <Filter>API3D\Gui</Filter>
+      <Filter>libs\Api\Gui</Filter>
     </ClCompile>
     <ClCompile Include="imgui\imgui.cpp">
       <Filter>imgui</Filter>
@@ -142,103 +160,119 @@
     <ClCompile Include="imgui\imgui_widgets.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="GameObject.cpp">
+      <Filter>libs\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="EObject.cpp">
+      <Filter>libs\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>libs\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>libs\Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube2d.cpp">
+      <Filter>libs\Templates</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreBehaviour.cpp">
+      <Filter>libs\Engine\Core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FactoryEngine.h">
-      <Filter>API3D</Filter>
-    </ClInclude>
-    <ClInclude Include="stdafx.h">
-      <Filter>API3D</Filter>
+      <Filter>libs\Api</Filter>
     </ClInclude>
     <ClInclude Include="System.h">
-      <Filter>API3D</Filter>
+      <Filter>libs\Api</Filter>
     </ClInclude>
     <ClInclude Include="GL1Render.h">
-      <Filter>API3D\Render</Filter>
+      <Filter>libs\Api\Render</Filter>
     </ClInclude>
     <ClInclude Include="GL4Render.h">
-      <Filter>API3D\Render</Filter>
+      <Filter>libs\Api\Render</Filter>
     </ClInclude>
     <ClInclude Include="Render.h">
-      <Filter>API3D\Render</Filter>
+      <Filter>libs\Api\Render</Filter>
     </ClInclude>
     <ClInclude Include="vertex.h">
-      <Filter>API3D\Data</Filter>
+      <Filter>libs\Api\Data</Filter>
     </ClInclude>
     <ClInclude Include="Entity.h">
-      <Filter>API3D\Core</Filter>
+      <Filter>libs\Api\Core</Filter>
     </ClInclude>
     <ClInclude Include="Mesh3D.h">
-      <Filter>API3D\Core</Filter>
+      <Filter>libs\Api\Core</Filter>
     </ClInclude>
     <ClInclude Include="Object.h">
-      <Filter>API3D\Core</Filter>
+      <Filter>libs\Api\Core</Filter>
     </ClInclude>
     <ClInclude Include="Object3D.h">
-      <Filter>API3D\Core</Filter>
+      <Filter>libs\Api\Core</Filter>
     </ClInclude>
     <ClInclude Include="GLFWInputManager.h">
-      <Filter>API3D\InputManager</Filter>
+      <Filter>libs\Api\InputManager</Filter>
     </ClInclude>
     <ClInclude Include="InputManager.h">
-      <Filter>API3D\InputManager</Filter>
+      <Filter>libs\Api\InputManager</Filter>
     </ClInclude>
     <ClInclude Include="GLFWTimeManager.h">
-      <Filter>API3D\TimeManager</Filter>
+      <Filter>libs\Api\TimeManager</Filter>
     </ClInclude>
     <ClInclude Include="TimeManager.h">
-      <Filter>API3D\TimeManager</Filter>
+      <Filter>libs\Api\TimeManager</Filter>
     </ClInclude>
     <ClInclude Include="RenderProgram.h">
-      <Filter>API3D\Shader</Filter>
+      <Filter>libs\Api\Shader</Filter>
     </ClInclude>
     <ClInclude Include="GLSLShader.h">
-      <Filter>API3D\Shader</Filter>
+      <Filter>libs\Api\Shader</Filter>
     </ClInclude>
     <ClInclude Include="Material.h">
-      <Filter>API3D\Material</Filter>
+      <Filter>libs\Api\Material</Filter>
     </ClInclude>
     <ClInclude Include="GLSLMaterial.h">
-      <Filter>API3D\Material</Filter>
+      <Filter>libs\Api\Material</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
-      <Filter>API3D\Camera</Filter>
+      <Filter>libs\Api\Camera</Filter>
     </ClInclude>
     <ClInclude Include="CameraKeyboard.h">
-      <Filter>API3D\Camera</Filter>
+      <Filter>libs\Api\Camera</Filter>
     </ClInclude>
     <ClInclude Include="Texture.h">
-      <Filter>API3D\Texture</Filter>
+      <Filter>libs\Api\Texture</Filter>
     </ClInclude>
     <ClInclude Include="GLTexture.h">
-      <Filter>API3D\Texture</Filter>
+      <Filter>libs\Api\Texture</Filter>
     </ClInclude>
     <ClInclude Include="frustrum.h">
-      <Filter>API3D\Data</Filter>
+      <Filter>libs\Api\Data</Filter>
     </ClInclude>
     <ClInclude Include="RenderType.h">
-      <Filter>API3D\Types</Filter>
+      <Filter>libs\Api\Types</Filter>
     </ClInclude>
     <ClInclude Include="InputType.h">
-      <Filter>API3D\Types</Filter>
+      <Filter>libs\Api\Types</Filter>
     </ClInclude>
     <ClInclude Include="MaterialType.h">
-      <Filter>API3D\Types</Filter>
+      <Filter>libs\Api\Types</Filter>
     </ClInclude>
     <ClInclude Include="TextureType.h">
-      <Filter>API3D\Types</Filter>
+      <Filter>libs\Api\Types</Filter>
     </ClInclude>
     <ClInclude Include="ProjectionType.h">
-      <Filter>API3D\Types</Filter>
+      <Filter>libs\Api\Types</Filter>
     </ClInclude>
     <ClInclude Include="Gui.h">
-      <Filter>API3D\Gui</Filter>
+      <Filter>libs\Api\Gui</Filter>
     </ClInclude>
     <ClInclude Include="GLFWImGui.h">
-      <Filter>API3D\Gui</Filter>
+      <Filter>libs\Api\Gui</Filter>
     </ClInclude>
     <ClInclude Include="GuiType.h">
-      <Filter>API3D\Types</Filter>
+      <Filter>libs\Api\Types</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imconfig.h">
       <Filter>imgui</Filter>
@@ -265,9 +299,31 @@
       <Filter>imgui</Filter>
     </ClInclude>
     <ClInclude Include="GLFWwindowDataType.h">
-      <Filter>API3D\DataType</Filter>
+      <Filter>libs\Api\DataType</Filter>
     </ClInclude>
     <ClInclude Include="API.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Def.h">
+      <Filter>libs\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>libs\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EObject.h">
+      <Filter>libs\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>libs\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>libs\Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube2d.h">
+      <Filter>libs\Templates</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreBehaviour.h">
+      <Filter>libs\Engine\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\shaders\model.frag">

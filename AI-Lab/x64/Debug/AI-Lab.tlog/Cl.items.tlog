@@ -1,3 +1,8 @@
+C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\Component.cpp;C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\x64\Debug\Component.obj
+C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\CoreBehaviour.cpp;C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\x64\Debug\CoreBehaviour.obj
+C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\Cube2d.cpp;C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\x64\Debug\Cube2d.obj
+C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\EObject.cpp;C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\x64\Debug\EObject.obj
+C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\GameObject.cpp;C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\x64\Debug\GameObject.obj
 C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\main.cpp;C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\x64\Debug\main.obj
 C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\Camera.cpp;C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\x64\Debug\Camera.obj
 C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\CameraKeyboard.cpp;C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\x64\Debug\CameraKeyboard.obj
@@ -29,3 +34,4 @@ C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\stdafx.cpp;C:\Users\yordy\Documen
 C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\System.cpp;C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\x64\Debug\System.obj
 C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\Texture.cpp;C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\x64\Debug\Texture.obj
 C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\TimeManager.cpp;C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\x64\Debug\TimeManager.obj
+C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\Transform.cpp;C:\Users\yordy\Documents\dev\lab\AI-Lab\AI-Lab\x64\Debug\Transform.obj

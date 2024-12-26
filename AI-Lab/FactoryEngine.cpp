@@ -3,8 +3,8 @@
 
 namespace API
 {
-	int FactoryEngine::app_width = 1080;
-	int FactoryEngine::app_height = 720;
+	int FactoryEngine::app_width = 1920 - 1920 / 6;
+	int FactoryEngine::app_height = 1080 - 1080 / 6;
 
 	RenderType FactoryEngine::selected_graphics_backend = RenderType::GL1;
 	InputType FactoryEngine::selected_input_backend = InputType::GLFW;

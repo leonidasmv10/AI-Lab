@@ -80,3 +80,14 @@
 
 // DataTypes
 #include "GLFWwindowDataType.h"
+
+// Engine
+#include "Def.h"
+#include "EObject.h"
+#include "Component.h"
+#include "GameObject.h"
+#include "Transform.h"
+#include "CoreBehaviour.h"
+
+// Templates
+#include "Cube2d.h"

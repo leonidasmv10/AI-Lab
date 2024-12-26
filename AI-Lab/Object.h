@@ -17,3 +17,4 @@ namespace API
 		unsigned int type;
 	};
 }
+

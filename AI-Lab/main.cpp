@@ -1,6 +1,9 @@
 #pragma once
 #include "stdafx.h"
 
+const std::size_t Engine::Component::type = std::hash<std::string>()(TO_STRING(Component));
+CLASS_DEFINITION(Component, Engine::Transform)
+
 class CubeTex : public API::Object3D
 {
 public:
@@ -21,6 +24,10 @@ int main(int argc, char** argv)
 
 	CubeTex* cube = new CubeTex();
 	cube->set_position({ 0.0f, 0.0f, 0.0f });
+
+	Template::Cube2d* cube2d = new Template::Cube2d();
+	cube2d->transform->position.x = 90;
+	cube2d->transform->log();
 
 	API::System::add_object(cube);
 	API::System::main_loop();
