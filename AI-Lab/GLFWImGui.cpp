@@ -138,7 +138,7 @@ namespace API
 		{
 			Camera* camera = System::get_camera();
 			const char* items[] = { "PERSPECTIVE", "ORTHO" };
-			/*int item_current = camera->get_type();
+			int item_current = camera->get_type();
 
 			if (ImGui::Combo("Projection", &item_current, items, IM_ARRAYSIZE(items)))
 			{
@@ -155,7 +155,7 @@ namespace API
 				}
 			}
 
-			ImGui::DragFloat3("Position", glm::value_ptr(camera->get_position()), 0.05f);*/
+			ImGui::DragFloat3("Position", glm::value_ptr(camera->get_position()), 0.05f);
 		}
 
 		if (ImGui::CollapsingHeader("Objects"))

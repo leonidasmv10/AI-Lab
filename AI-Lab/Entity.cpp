@@ -9,6 +9,7 @@ namespace API
 		this->rotation = glm::vec3(0.0f, 0.0f, 0.0f);
 		this->scale = glm::vec3(1.0f, 1.0f, 1.0f);
 		this->model = glm::mat4(1.0f);
+		this->enabled = true;
 	}
 
 	void Entity::set_position(const glm::vec3& position)
@@ -31,24 +32,34 @@ namespace API
 		this->model = model;
 	}
 
-	glm::vec3 Entity::get_position()
+	void Entity::set_enabled(const bool& disabled)
+	{
+		this->enabled = disabled;
+	}
+
+	glm::vec3& Entity::get_position()
 	{
 		return position;
 	}
 
-	glm::vec3 Entity::get_rotation()
+	glm::vec3& Entity::get_rotation()
 	{
 		return rotation;
 	}
 
-	glm::vec3 Entity::get_scale()
+	glm::vec3& Entity::get_scale()
 	{
 		return scale;
 	}
 
-	glm::mat4 Entity::get_model()
+	glm::mat4& Entity::get_model()
 	{
 		return model;
+	}
+
+	bool& Entity::get_enabled()
+	{
+		return enabled;
 	}
 
 	void Entity::compute_model_matrix()

@@ -8,8 +8,8 @@ namespace API
 	{
 		this->input = FactoryEngine::get_input_manager();
 		this->flag = true;
-		this->speed = 5.0f;
-		this->sensitivity = 0.25f;
+		this->speed = 12.5f;
+		this->sensitivity = 0.15f;
 	}
 
 	void CameraKeyboard::rotation_in_mouse(float xoffset, float yoffset)

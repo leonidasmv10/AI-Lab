@@ -11,8 +11,8 @@ namespace API
 		this->_frustrum = _frustrum;
 		this->pos_init = position;
 
-		this->yaw = 90.0f;
-		this->pitch = 0.0f;
+		this->yaw = 70.0f;
+		this->pitch = -20.0f;
 
 		this->compute_projection_matrix();
 		this->compute_view_matrix();
@@ -34,7 +34,7 @@ namespace API
 				_frustrum.z_far);
 			break;
 		case API::ORTHO:
-			projection = glm::ortho(0.0f, (float)_frustrum.width, 0.0f, (float)_frustrum.height, _frustrum.z_near, _frustrum.z_far);
+			projection = glm::ortho(-10.0f, 10.0f, -10.0f, 10.0f, 1.0f, 1000.0f);
 			break;
 		default:
 			break;
@@ -46,22 +46,21 @@ namespace API
 		switch (type)
 		{
 		case API::PERSPECTIVE:
-			if (!System::get_cursor_enabled())
+			/*if (System::get_cursor_enabled())
 			{
-				view = glm::lookAt(position, position + look_at, up);
+				float time = System::get_time_manager()->get_time();
+				float radius = 15.0f;
+				float x = static_cast<float>(sin(time) * radius);
+				float z = static_cast<float>(cos(time) * radius);
+				view = glm::lookAt(glm::vec3(x, 1.0f, z), glm::vec3(0.0f, 0.5f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 			}
-			else
-			{
-				position = pos_init;
-				view = glm::lookAt(position, { 0.0f, 0.0f, 0.0f }, up);
-				position = { pos_init.x * -1.0f, pos_init.y - 1.0f, pos_init.z * -1.0f };
-				this->yaw = 90.0f;
-				this->pitch = 0.0f;
-				calculate_look_at();
-			}
-			break;
+			else*/
+		{
+			view = glm::lookAt(position, position + look_at, up);
+		}
+		break;
 		case API::ORTHO:
-			view = glm::lookAt({ 0.0f, 0.0f, 0.0f }, { 0.0f, 0.0f, 0.0f }, up);
+			view = glm::lookAt(position, look_at, up);
 			break;
 		default:
 			break;
@@ -70,12 +69,12 @@ namespace API
 
 	void Camera::calculate_look_at()
 	{
+		glm::vec3 look{};
+
 		if (pitch > 89.0f)
 			pitch = 89.0f;
 		if (pitch < -89.0f)
 			pitch = -89.0f;
-
-		glm::vec3 look{};
 		look.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
 		look.y = sin(glm::radians(pitch));
 		look.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
@@ -118,5 +117,30 @@ namespace API
 	glm::vec3 Camera::get_up()
 	{
 		return up;
+	}
+
+	void Camera::set_view(glm::mat4 view)
+	{
+		this->view = view;
+	}
+
+	void Camera::set_projection(glm::mat4 projection)
+	{
+		this->projection = projection;
+	}
+
+	void Camera::set_look_at(glm::vec3 look_at)
+	{
+		this->look_at = look_at;
+	}
+
+	ProjectionType& Camera::get_type()
+	{
+		return type;
+	}
+
+	void Camera::set_type(ProjectionType type)
+	{
+		this->type = type;
 	}
 }

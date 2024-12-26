@@ -6,7 +6,6 @@ namespace API
 	{
 	public:
 		Camera(ProjectionType projection_type, glm::vec3 position, glm::vec3 up, glm::vec3 look_at, frustrum _frustrum = {});
-
 		void set_frustrum(const frustrum frustrum);
 		void compute_projection_matrix();
 		void compute_view_matrix();
@@ -20,6 +19,12 @@ namespace API
 		frustrum get_frustrum();
 		glm::vec3 get_look_at();
 		glm::vec3 get_up();
+		void set_view(glm::mat4 view);
+		void set_projection(glm::mat4 projection);
+		void set_look_at(glm::vec3 look_at);
+
+		ProjectionType& get_type();
+		void set_type(ProjectionType type);
 
 	private:
 
