@@ -23,6 +23,9 @@
 
 #include "API.h"
 
+// Math
+#include "Vector3.h"
+
 // Types
 #include "InputType.h"
 #include "MaterialType.h"
@@ -90,4 +93,5 @@
 #include "CoreBehaviour.h"
 
 // Templates
-#include "Cube2d.h"
+#include "Box3d.h"
+

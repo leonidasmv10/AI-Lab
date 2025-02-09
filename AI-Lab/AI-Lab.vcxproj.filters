@@ -70,6 +70,12 @@
     <Filter Include="libs\Templates">
       <UniqueIdentifier>{e799c5fc-b759-48fa-b004-02adfd5c0ef5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="libs\Math\Vector4">
+      <UniqueIdentifier>{9e8e677a-9a70-4dbb-9662-28775ace452b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\Math\Vector3">
+      <UniqueIdentifier>{dc56e97c-4561-4be7-96e9-ef91885244f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FactoryEngine.cpp">
@@ -173,11 +179,14 @@
     <ClCompile Include="Transform.cpp">
       <Filter>libs\Engine\Components</Filter>
     </ClCompile>
-    <ClCompile Include="Cube2d.cpp">
-      <Filter>libs\Templates</Filter>
-    </ClCompile>
     <ClCompile Include="CoreBehaviour.cpp">
       <Filter>libs\Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>libs\Math\Vector3</Filter>
+    </ClCompile>
+    <ClCompile Include="Box3d.cpp">
+      <Filter>libs\Templates</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -301,7 +310,6 @@
     <ClInclude Include="GLFWwindowDataType.h">
       <Filter>libs\Api\DataType</Filter>
     </ClInclude>
-    <ClInclude Include="API.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Def.h">
       <Filter>libs\Engine\Core</Filter>
@@ -318,11 +326,20 @@
     <ClInclude Include="Transform.h">
       <Filter>libs\Engine\Components</Filter>
     </ClInclude>
-    <ClInclude Include="Cube2d.h">
-      <Filter>libs\Templates</Filter>
-    </ClInclude>
     <ClInclude Include="CoreBehaviour.h">
       <Filter>libs\Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>libs\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Api.h">
+      <Filter>libs\Api</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>libs\Math\Vector3</Filter>
+    </ClInclude>
+    <ClInclude Include="Box3d.h">
+      <Filter>libs\Templates</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

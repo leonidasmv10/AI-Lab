@@ -141,9 +141,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Box3d.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="CoreBehaviour.cpp" />
-    <ClCompile Include="Cube2d.cpp" />
     <ClCompile Include="EObject.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="main.cpp" />
@@ -181,14 +181,15 @@
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="TimeManager.cpp" />
     <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Vector3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="API.h" />
+    <ClInclude Include="Api.h" />
+    <ClInclude Include="Box3d.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="CameraKeyboard.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="CoreBehaviour.h" />
-    <ClInclude Include="Cube2d.h" />
     <ClInclude Include="Def.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EObject.h" />
@@ -218,6 +219,7 @@
     <ClInclude Include="InputType.h" />
     <ClInclude Include="Material.h" />
     <ClInclude Include="MaterialType.h" />
+    <ClInclude Include="Math.h" />
     <ClInclude Include="Mesh3D.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="Object3D.h" />
@@ -231,6 +233,7 @@
     <ClInclude Include="TextureType.h" />
     <ClInclude Include="TimeManager.h" />
     <ClInclude Include="Transform.h" />
+    <ClInclude Include="Vector3.h" />
     <ClInclude Include="vertex.h" />
   </ItemGroup>
   <ItemGroup>

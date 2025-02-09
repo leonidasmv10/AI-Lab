@@ -2,15 +2,15 @@
 
 namespace Engine
 {
-    class Transform : public Component
-    {
-        CLASS_DECLARATION(Transform)
-    public:
-        Transform();
-        glm::vec2 position;
-        glm::vec2 scale;
-        float rotation;
+	class Transform : public Component
+	{
+		CLASS_DECLARATION(Transform)
+	public:
+		Transform();
+		Math::Vector3 position;
+		Math::Vector3 scale;
+		float rotation;
 
-        void log();
-    };
+		void log();
+	};
 }
